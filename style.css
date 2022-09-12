@@ -1,0 +1,189 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Abril Fatface",cursive;
+}
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  width: 100vw;
+  justify-content: flex-end;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  position: fixed;
+}
+/*-------------------------
+    TEXTOS
+-------------------------*/
+
+
+
+
+/*--------------------------------
+    NAV BAR GENERAL
+----------------------------------*/
+ul {
+  list-style-type: none;
+  align-items: flex-end;
+  line-height:1.2;
+  position:relative;
+  justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    font-family: var(--font-primary) ;
+   
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+    
+}
+
+  
+/*--------------------------------
+    NAV BAR HEADER
+----------------------------------*/
+.nav-header {
+  margin-right: 10%;
+  color: #130b49;
+  font-family: var(--font-primary);
+  
+}
+
+.menu-header,
+.menu-proyectos,
+.menu-footer {
+  margin: 10px;
+  padding: 10px;
+}
+#icono-burger {
+  display: none;
+}
+
+/* .button {
+  background-color: #0400ff;
+  border-radius: 25px;
+  color: #d3faf5;
+  padding: 10px 40px;
+} */
+/*--------------------------------
+    MENU DESPLEGABLE MOBILE
+----------------------------------*/
+.contenedor-barra-mobile {
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: -250px;
+  right: 0;
+  transition: 1s;
+}
+.barra-mobile {
+  background-color: rgba(250, 250, 250, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-desplegado {
+  right: 0;
+  top: 70px;
+}
+/*--------------------------------
+   DISPLAY FLEX
+----------------------------------*/
+ul,
+nav,
+header
+ {
+  display: flex;
+} 
+
+/*--------------------------------
+    Layout Principal
+----------------------------------*/
+  .layout-principal{
+    width:100%;
+    height:80vh;
+   
+    
+  } 
+  .title-image {
+    font-family:var(--font-secondary);
+    font-size:70px;
+    color:rgb(255, 255, 255);
+    position: absolute;
+    bottom:150px;
+    left:65%
+  } 
+/*-------------------------
+    @MEDIA TABLETS
+-------------------------*/
+@media (min-width: 600px) and (max-width: 900px) {
+    /*--------------------------------
+      NAV BAR HEADER
+    ----------------------------------*/
+
+    .nav-header {
+      margin-right: 5%;
+      font-family:var(--font-primary);
+      
+    }
+
+    .menu-header {
+      font-size: 16px;
+      
+    }
+    .layout-principal{
+      width:100%;
+      height:65vh;
+      
+    } 
+    
+}
+  /*-------------------------
+    @MEDIA CELULARES
+-------------------------*/
+@media (max-width: 599px) {
+    /*--------------------------------
+       NAV BAR HEADER
+    ----------------------------------*/
+    #ul-header {
+      display: none;
+    }
+
+    #icono-burger {
+      display: block;
+      font-size: 30px;
+      color: #0c007b;
+    }
+    .layout-principal{
+      width:100%;
+      height:50vh;
+      
+    } 
+    .title-image {
+      font-family:var(--font-secondary);
+      font-size:45px;
+      color:rgb(255, 255, 255);
+      position: absolute;
+      bottom:374px;
+      left:68px ;
+      
+    } 
+}
