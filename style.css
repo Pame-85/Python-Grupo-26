@@ -94,7 +94,7 @@ a:hover, a:focus {
   transition: 1s;
 }
 .barra-mobile {
-  background-color: rgba(250, 250, 250, 0.6);
+  background-color: rgba(250, 250, 250, 0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,7 +130,44 @@ header
     position: absolute;
     bottom:150px;
     left:65%
-  } 
+  }
+  /*--------------------------------
+       SECCIÓN QUOTE
+----------------------------------*/
+.seccion-quote {
+  background: rgb(67, 161, 254);
+  
+  color: #fafafa;
+  padding: 100px 20px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.div-quote {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.p-quote {
+  font-family:--font-secondary;
+  font-size:40px;
+  margin: 15px 20px;
+}
+.h3-quote {
+  font-family:--font-secondary;
+  font-size: 35px;
+  color: #fafafa;
+  padding-bottom: 20px;
+  font-weight: normal;
+  margin: 10px 150px;
+  
+  
+}
+
+/* .fa-theater-masks:before{
+  margin-left: 25px!important;
+} */
+
 /*-------------------------
     @MEDIA TABLETS
 -------------------------*/
@@ -186,4 +223,9 @@ header
       left:68px ;
       
     } 
-}
+
+    
+      
+      
+    }
+
